@@ -1,0 +1,30 @@
+{
+  "name": "ListApp",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "lie": "^3.0.1",
+    "object-assign": "^1.0.0",
+    "react": "^0.12.0",
+    "superagent": "^1.5.0"
+  },
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "envify": "^3.0.0",
+    "reactify": "^0.15.2",
+    "uglify-js": "~2.4.15",
+    "watchify": "^2.1.1"
+  },
+  "scripts": {
+    "start": "watchify -o dist/bundle.js -v -d src/app.js",
+    "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > dist/bundle.min.js"
+  },
+  "author": "Alex Bedley",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}
