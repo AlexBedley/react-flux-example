@@ -56,7 +56,7 @@ This repo contains two applications: `FilterBar` and `ListApp`. `FilterBar` is f
         |   |-- App.react.js        - This is our controller-view which receives updates from the AppStore
                                       and passes it down to its children
         |   |-- List.react.js       - Renders a collection of ListItems
-        |   |-- ListItem.react.js   - Renders a list object
+        |   |-- ListItem.react.js   - Renders a list item
         |-- dispatcher
         |   |-- AppDispatcher.js    - Flux built-in AppDispatcher
         |-- stores
