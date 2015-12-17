@@ -3,6 +3,7 @@
 This application displays US TV shows airing today and allows you to filter the shows by name.
 
 More technically, this example shows how a flux-react application can:
+
 1. Call and manipulate data from an API
 2. Use components from elsewhere (like npm)
 
@@ -50,19 +51,34 @@ This repo contains two applications: `FilterBar` and `ListApp`. `FilterBar` is f
     |-- src
         |-- app.js                  - Main entry point for the application
         |-- actions
-        |   |-- AppActions.js       - A list of all actions that can be fired
+        |   |-- AppActions.js       - This is our action creator
         |-- components
-        |   |-- App.react.js        - Passes data down to child components and lays out the application
+        |   |-- App.react.js        - This is our controller-view which receives updates from the AppStore
+                                      and passes it down to its children
         |   |-- List.react.js       - Renders a collection of ListItems
         |   |-- ListItem.react.js   - Renders a list object
         |-- dispatcher
         |   |-- AppDispatcher.js    - Flux built-in AppDispatcher
         |-- stores
-            |-- AppStore.js         - Holds and fetches data for the application. Updates data based on Actions
+            |-- AppStore.js         - Holds and fetches data for the application. Updates data based on
+                                      Actions and emits change events
  ```
 
 As you can see, the application is split into 4 main folders, *actions*, *dispatcher*, *stores*, *components*. These map to the concepts we learned in the previous section.
 
+### Relation to class-insights
+
+Mapping files in this repo to class-insights:
+
+Table:
+* List, ListItem
+
+ButtonBar:
+* FilterBar
+
+Parent:
+* AppActions, AppStore, AppDispatcher, App
+
 ### Limitations of this example
 
-I had a hard time getting browserify to play nice with the child component
+I had a hard time getting browserify to play nice with the child component, so I had to do wonky stuff like passing React down to the child component. This is because I didn't put the component in npm. Kevin and Miles already got this working in the skeleton repos so I'm not worried about this.
