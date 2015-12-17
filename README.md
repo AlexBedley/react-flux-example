@@ -25,7 +25,7 @@ npm start
 After both applications have been reactified and browserified (via `npm start`), open `ListApp/index.html`.
 
 ### What is Flux?
-
+![](https://github.com/facebook/flux/raw/master/docs/img/flux-diagram-white-background.png)
 ![](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
 
 Flux is a methodology that all data must flow in one direction (see pic above). Flux can be broken down into four things:
