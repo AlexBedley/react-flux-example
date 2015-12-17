@@ -68,7 +68,7 @@ As you can see, the application is split into 4 main folders, *actions*, *dispat
 
 ### Relation to class-insights
 
-Mapping files in this repo to class-insights:
+To turn this repo into class-insights we would split up the files to the following class-insight repos:
 
 Table:
 * List, ListItem
@@ -77,7 +77,7 @@ ButtonBar:
 * FilterBar
 
 Parent:
-* AppActions, AppStore, AppDispatcher, App
+* AppActions, AppStore, AppDispatcher, App, app
 
 ### Limitations of this example
 
