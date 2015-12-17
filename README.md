@@ -42,7 +42,7 @@ Helpful references (optional, for background information):
  
 ### This repo
 
-This repo contains two applications: `FilterBar` and `ListApp`. `FilterBar` is fairly simple and only contains a single React component. Let's ignore `FilterBar` for now and take a look at `ListApp`:
+This repo contains two applications: `FilterBar` and `ListApp`. `FilterBar` is fairly simple and only contains a single React component. Let's ignore `FilterBar` for now and take a look at `ListApp`. It will help to refer to the picture above.
  
  ```
  |-- ListApp
