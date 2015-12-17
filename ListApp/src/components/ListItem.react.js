@@ -9,7 +9,7 @@ var ListItem = React.createClass({
   render: function() {
     return(
       <a className="list-group-item">
-        <span className="h3">{this.props.item.name} <small>{this.props.item.network}</small></span>
+        <span className="h3">{this.props.item.name} <small>{this.props.item.network} - {this.props.item.airtime}</small></span>
         <div className="pull-right">
           <span className="glyphicon glyphicon-menu-right" />
         </div>

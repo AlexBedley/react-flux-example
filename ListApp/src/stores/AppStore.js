@@ -17,7 +17,8 @@ request
     AppActions.updateList(res.body.map(function(item) {
       return {
         name: item.show.name,
-        network: item.show.network.name
+        network: item.show.network.name,
+        airtime: item.airtime
       };
     }));
   });
